@@ -17,7 +17,6 @@ class Scraper
       course.schedule = course_html.css(".date").text
       course.description = course_html.css("p").text
     end
-    self.get_courses
   end
 
   def get_courses
