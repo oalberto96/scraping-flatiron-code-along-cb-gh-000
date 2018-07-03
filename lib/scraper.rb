@@ -11,8 +11,8 @@ class Scraper
   end
 
   def make_courses
-    puts self.get_page.css(".post")
-    binding.pry
+    self.get_page.css(".post")
+    
   end
 
   def print_courses
