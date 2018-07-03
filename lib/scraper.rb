@@ -12,7 +12,7 @@ class Scraper
 
   def make_courses
     puts self.get_page.css("post")
-    
+    binding.pry
   end
 
   def print_courses
