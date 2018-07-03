@@ -10,7 +10,7 @@ class Scraper
     @doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
   end
 
-  def get_courses
+  def make_courses
     puts @doc.css("post same-height-left")
   end
 
