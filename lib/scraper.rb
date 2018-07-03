@@ -12,11 +12,10 @@ class Scraper
 
   def make_courses
     self.get_page.css(".post").each do |course_html|
-      course Course.new()
+      course = Course.new()
       course.title = course_html.css("h2").text
       course.schedule = course_html.css(".date").text
       course.description = course_html.css("p").text
-      binding.pry
     end
     self.get_courses
   end
