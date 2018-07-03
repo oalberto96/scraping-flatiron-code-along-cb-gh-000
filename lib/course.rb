@@ -12,4 +12,8 @@ class Course
     @@all
     binding.pry
   end
+
+  def self.reset_all
+    @@all.clear
+  end
 end
