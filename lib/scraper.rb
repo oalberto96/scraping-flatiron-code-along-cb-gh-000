@@ -18,6 +18,7 @@ class Scraper
       course.description = course_html.css("p").text
       binding.pry
     end
+    self.get_courses
   end
 
   def get_courses
