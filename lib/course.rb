@@ -10,6 +10,6 @@ class Course
 
   def self.all
     @@all
-
+    binding.pry
   end
 end
