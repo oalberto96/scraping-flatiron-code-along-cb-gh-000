@@ -11,7 +11,7 @@ class Scraper
   end
 
   def make_courses
-    puts @doc.css("post same-height-left")
+    puts self.get_page.css("post same-height-left")
   end
 
   def print_courses
