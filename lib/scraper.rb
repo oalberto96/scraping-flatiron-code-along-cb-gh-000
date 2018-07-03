@@ -5,13 +5,13 @@ require_relative './course.rb'
 
 class Scraper
   attr_accessor :doc
-  
+
   def get_page
     @doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
   end
 
   def get_courses
-    
+    puts @doc.css("post same-height-left")
   end
 
   def print_courses
