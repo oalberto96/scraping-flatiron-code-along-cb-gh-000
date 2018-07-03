@@ -10,7 +10,6 @@ class Course
 
   def self.all
     @@all
-    binding.pry
   end
 
   def self.reset_all
