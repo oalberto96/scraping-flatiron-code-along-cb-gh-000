@@ -11,8 +11,10 @@ class Scraper
   end
 
   def make_courses
-    puts self.get_page.css(".post").css("h2")
-    binding.pry
+    puts self.get_page.css(".post").each do |course_html|
+      Course.new(course_html.css("h2").text, course_html.css(".date").text, course_html.css("p").text)
+      
+    end
 
   end
 
