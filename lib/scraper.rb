@@ -12,6 +12,7 @@ class Scraper
 
   def make_courses
     puts self.get_page.css(".post").css("h2")
+    binding.pry
 
   end
 
